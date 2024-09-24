@@ -1,0 +1,38 @@
+package com.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpStatusCodeException;
+
+import com.entity.UserEntity;
+import com.repo.UserRepo;
+
+@Service
+public class AuthService {
+
+    @Autowired
+    private UserRepo userRepo; // Directly using UserRepo here
+
+    public UserEntity loginUser(String email, String password) {
+        // Find user by email
+        Optional<UserEntity> userOptional = userRepo.findByEmail(email);
+        if (userOptional.isPresent()) {
+            UserEntity user = userOptional.get();
+            
+            // Check if the provided password matches the stored hashed password
+            if (BCrypt.checkpw(password, user.getPassword())) {
+                return user;
+            } else {
+                throw new RuntimeException("Invalid password");
+                
+            }
+        } else {
+            throw new RuntimeException("User not found");
+        }
+    }
+}
+

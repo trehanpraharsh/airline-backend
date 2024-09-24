@@ -1,0 +1,2 @@
+spring.application.name=feedback-ms
+server.port=8088

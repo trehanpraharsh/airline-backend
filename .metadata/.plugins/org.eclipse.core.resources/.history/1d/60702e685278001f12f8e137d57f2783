@@ -1,0 +1,59 @@
+package com.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.stereotype.Service;
+
+import com.dao.UserDao;
+import com.entity.UserEntity;
+import com.repo.UserRepo;
+
+@Service
+public class UserService {
+
+    @Autowired
+    private UserDao userDao;
+
+    @Autowired
+    private UserRepo userRepo;
+
+    public Optional<UserEntity> getUserbyId(Long userId) {
+        return userDao.findById(userId);
+    }
+
+    public UserEntity registerUser(UserEntity user) {
+        
+        Optional<UserEntity> existingUser = userRepo.findByEmail(user.getEmail());
+        if (existingUser.isPresent()) {
+            throw new RuntimeException("User already exists");
+        }
+
+        // Encrypt the password before saving
+        String hashedPassword = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
+        user.setPassword(hashedPassword); // Set the hashed password
+
+       
+        return userDao.save(user);
+    }
+    public String resetPassword(String email, String newPassword) {
+        Optional<UserEntity> userOptional = userRepo.findByEmail(email);
+        if (userOptional.isPresent()) {
+            UserEntity user = userOptional.get();
+            String hashedPassword = BCrypt.hashpw(newPassword, BCrypt.gensalt());
+            user.setPassword(hashedPassword);
+            userDao.save(user);
+            System.out.println("Password reset successful");
+            return "Password reset successful";  
+        } else {
+        	System.out.println("Password reset failed");
+            return "Password reset failed";  
+        }
+    }
+    
+    
+    
+    
+    
+}
