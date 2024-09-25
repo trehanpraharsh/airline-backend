@@ -11,4 +11,5 @@ import com.entity.Airline;
 public interface AirlineRepository extends JpaRepository<Airline, Long> {
 	
 	public Optional<Airline> findByAirlineUniqueCode(String airlineUniqueCode);
+	public Optional<Airline> findByAirlineEmail(String airlineEmail);
 }

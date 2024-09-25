@@ -18,6 +18,7 @@ import com.model.OfferResponseModel;
 import com.model.PromotionModel;
 import com.model.PromotionResponseModel;
 import com.model.FeedbackModel;
+import com.model.Flights;
 import com.service.AirlineService;
 import com.service.AirportService;
 import com.service.OwnerService;
@@ -60,10 +61,24 @@ public class OwnerController
     
     //add airline
     @PostMapping("/addAirline")
-    public String addAirline(@RequestBody Airline airline)
+    public Airline addAirline(@RequestBody Airline airline)
     {
-    	ownerService.addAirline(airline);
-    	return "Airline added";
+    	return ownerService.addAirline(airline);
+//    	return "Airline added";
+    }
+    
+    
+    @GetMapping("/findadminbyemail/{adminEmail}")
+    public Optional<Airline> findByAirlineEmail(@PathVariable String adminEmail){
+    	return ownerService.findByAirlineEmail(adminEmail);
+    }
+    
+    
+    
+    @GetMapping("/getAllAirlines")
+    public List<Airline> getAllAirlines()
+    {
+        return ownerService.getAllAirlines();
     }
 
     //load all airports
@@ -123,10 +138,17 @@ public class OwnerController
     	
     }
 
-    public List<FeedbackModel> getFeedbackbyBookingId()
-    {
-		return null;
-    	
+    @GetMapping("/displayallflights")
+    public List<Flights> showAllFlights(){
+    	return ownerService.displayAllFlights();
     }
+    
+    
+    @PutMapping("/changeflightlisting/{flightID}/{is_disabled_val}")
+    public Flights updateFlightListing(@PathVariable int flightID, @PathVariable boolean is_disabled_val) {
+    	return ownerService.updateFlightListing(flightID, is_disabled_val);
+    }
+    
+    
 }
 

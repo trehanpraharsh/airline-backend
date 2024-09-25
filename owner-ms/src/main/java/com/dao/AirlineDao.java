@@ -14,4 +14,6 @@ public interface AirlineDao {
     void deleteById(Long id);
     
     Optional<Airline> findByAirlineUniqueCode(String airlineUniqueCode);
+    
+    public Optional<Airline> findByAirlineEmail(String airlineEmail);
 }

@@ -70,7 +70,7 @@ public class FlightsService {
 	
 	public Flights createFlightAndSeatAvailablity(Flights flight) {
 		
-		Flights newFlight = new Flights(flight.getSource_airport(), flight.getDestination_airport(), flight.getDeparture_time(), flight.getArrival_time(), flight.getDeparture_date(), flight.getArival_date(), flight.getEconomy_seats(), flight.getPremium_economy_seats(), flight.getBusiness_seats(), flight.getEconomy_ticket_cost(), flight.getPremium_ticket_economy_cost(), flight.getBusiness_ticket_cost(), flight.getEconomy_baggage_allowance(), flight.getPremium_economy_baggage_allowance(), flight.getBusiness_baggage_allowance(), flight.isIsflight_disabled(), flight.getAirline_unique_code());
+		Flights newFlight = new Flights(flight.getSource_airport(), flight.getDestination_airport(), flight.getDeparture_time(), flight.getArrival_time(), flight.getDeparture_date(), flight.getArival_date(), flight.getEconomy_seats(), flight.getPremium_economy_seats(), flight.getBusiness_seats(), flight.getEconomy_ticket_cost(), flight.getPremium_ticket_economy_cost(), flight.getBusiness_ticket_cost(), flight.getEconomy_baggage_allowance(), flight.getPremium_economy_baggage_allowance(), flight.getBusiness_baggage_allowance(), flight.isIsflight_disabled(), flight.getAirline_unique_code(), flight.getAirlineImage(), flight.getAirlineName());
 		
 		FlightSeatAvailablity newFlightSeatAvailablity = new FlightSeatAvailablity(flight.getEconomy_seats(), flight.getPremium_economy_seats(), flight.getBusiness_seats());
 		

@@ -23,4 +23,5 @@ public class Airline {
     private String airlineImage;
     private String airlinePassword;
     private String airlineUniqueCode;
+    private String airlineEmail;
 }

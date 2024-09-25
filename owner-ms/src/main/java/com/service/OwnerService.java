@@ -1,6 +1,7 @@
 package com.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,10 +21,12 @@ import com.dao.ScheduleDao;
 import com.entity.Airline;
 import com.entity.Airport;
 import com.model.FeedbackModel;
+import com.model.Flights;
 import com.model.OfferModel;
 import com.model.OfferResponseModel;
 import com.model.PromotionModel;
 import com.model.PromotionResponseModel;
+import com.model.secureAdmin;
 import com.repo.AirlineRepository;
 
 import reactor.core.publisher.Flux;
@@ -63,9 +66,32 @@ public class OwnerService
 	        return airportDao.findAll();
 	    }
 	    
+	    public List<Airline> getAllAirlines()
+	    {
+	        return airlineDao.findAll();
+	    }
+	   
+	    
 	    public Airline addAirline(Airline airline)
 	    {
-	    	return airlineDao.save(airline);	    
+//	    	//concept to save the secured admin in the auth while the time of logging in
+//	        secureAdmin securedAdmin = new secureAdmin(airline.getAirlineEmail(), airline.getAirlinePassword(), "ADMIN");
+//	        
+//	        String registerSecuredAdminURL = "http://localhost:8089/auth/secureadmin";
+//	        
+//	        secureAdmin loadedSecureAdmin = builder.build()
+//	        								.post()
+//	        								.uri(registerSecuredAdminURL)
+//	        								.bodyValue(securedAdmin)
+//	        								.retrieve()
+//	        								.bodyToMono(secureAdmin.class)
+//	        								.block();
+	    	
+	    	return airlineDao.save(airline);	
+	    }
+	    
+	    public Optional<Airline> findByAirlineEmail(String airlineEmail){
+	    	return airlineDao.findByAirlineEmail(airlineEmail);
 	    }
 	    
 	    public String deleteAirline(Long id) {
@@ -88,7 +114,6 @@ public class OwnerService
 	    }
 
 	    //disable / enable offer
-	    @PutMapping("/updateOfferList/{offerId}/{status}")
 	    public String updateOfferList(@PathVariable Long offerId, @PathVariable int status)
 	    {
 	    	builder.build()
@@ -103,7 +128,6 @@ public class OwnerService
 	    }
 
 	    //get offers applied
-	    @GetMapping("/getOffers")
 	    public Flux<OfferResponseModel> getOffers()
 	    {
 			return builder.build()
@@ -114,7 +138,6 @@ public class OwnerService
 	    }
 
 	    //add promotional offer
-	    @PostMapping("/addPromotion")
 	    public String addPromotion(@RequestBody PromotionModel promotion)
 	    {
 	    	builder.build()
@@ -129,7 +152,6 @@ public class OwnerService
 	    	
 	    }
 
-	    @PutMapping("/updatePromotionList/{promotionId}/{status}")
 	    public String updatePromotionList(@PathVariable Long promotionId, @PathVariable String status)
 	    {
 	    	builder.build()
@@ -143,7 +165,6 @@ public class OwnerService
 	    	
 	    }
 
-	    @GetMapping("/getPromotions")
 	    public Flux<PromotionResponseModel> getPromotion()
 	    {
 	    	return builder.build()
@@ -153,11 +174,35 @@ public class OwnerService
 					.bodyToFlux(PromotionResponseModel.class);  
 	    }
 
-	    //get feedbacks by booking ids
-	    @GetMapping("/feedback")
-	    public List<FeedbackModel> getFeedbackbyBookingId()
-	    {
-			return null;
-	    	
-	    }
+	   public List<Flights> displayAllFlights(){
+		   
+		   String loadAllFlightsURL = "http://localhost:8081/flights/showallflights";
+		   
+		   List<Flights> flights = builder.build()
+				   						.get()
+				   						.uri(loadAllFlightsURL)
+				   						.retrieve()
+				   						.bodyToFlux(Flights.class)
+				   						.collectList()
+				   						.block();
+				   		
+		   return flights;
+		   
+	   }
+	   
+	   public Flights updateFlightListing(int flightID, boolean is_disabled_val) {
+		
+		   String updateListingURL = "http://localhost:8081/updateflightlisting/{flightID}/{is_disabled_val}";
+		   
+		   Flights updatedFlight = builder.build()
+				   						.put()
+				   						.uri(updateListingURL, flightID, is_disabled_val)
+				   						.retrieve()
+				   						.bodyToMono(Flights.class)
+				   						.block();
+		   
+		   return updatedFlight;
+		   
+	   }
+	   
 }

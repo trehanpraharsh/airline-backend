@@ -62,6 +62,9 @@ public class Flights {
 	
 	@Enumerated(EnumType.STRING)
 	private flight_status status = flight_status.ON_TIME;
+	
+	private String airlineName;
+	private String airlineImage;
 
 	
 	
@@ -69,7 +72,8 @@ public class Flights {
 			LocalDate departure_date, LocalDate arival_date, int economy_seats, int premium_economy_seats,
 			int business_seats, double economy_ticket_cost, double premium_ticket_economy_cost,
 			double business_ticket_cost, int economy_baggage_allowance, int premium_economy_baggage_allowance,
-			int business_baggage_allowance, boolean isflight_disabled, String airline_unique_code) {
+			int business_baggage_allowance, boolean isflight_disabled, String airline_unique_code, 
+			String airlineName, String airlineImage) {
 		super();
 		this.source_airport = source_airport;
 		this.destination_airport = destination_airport;
@@ -88,6 +92,8 @@ public class Flights {
 		this.business_baggage_allowance = business_baggage_allowance;
 		this.isflight_disabled = isflight_disabled;
 		this.airline_unique_code = airline_unique_code;
+		this.airlineImage=airlineImage;
+		this.airlineName=airlineImage;
 	}
 	
 	
