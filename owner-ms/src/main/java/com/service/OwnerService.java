@@ -192,7 +192,7 @@ public class OwnerService
 	   
 	   public Flights updateFlightListing(int flightID, boolean is_disabled_val) {
 		
-		   String updateListingURL = "http://localhost:8081/updateflightlisting/{flightID}/{is_disabled_val}";
+		   String updateListingURL = "http://localhost:8081/flights/updateflightlisting/{flightID}/{is_disabled_val}";
 		   
 		   Flights updatedFlight = builder.build()
 				   						.put()
