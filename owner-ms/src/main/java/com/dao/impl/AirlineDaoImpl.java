@@ -21,7 +21,7 @@ public class AirlineDaoImpl implements AirlineDao {
     @Autowired
     private AirlineRepository airlineRepository;
     
-    @Lazy
+    
 	@Autowired
 	@Qualifier("webclient")
 	private WebClient.Builder builder;
@@ -51,7 +51,7 @@ public class AirlineDaoImpl implements AirlineDao {
       //concept to save the secured admin in the auth while the time of logging in
         secureAdmin securedAdmin = new secureAdmin(airline.getAirlineEmail(), airline.getAirlinePassword(), "ADMIN");
         
-        String registerSecuredAdminURL = "http://localhost:8089/auth/secureadmin";
+        String registerSecuredAdminURL = "http://auth-login/auth/secureadmin";
         
         secureAdmin loadedSecureAdmin = builder.build()
         								.post()

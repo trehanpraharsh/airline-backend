@@ -8,15 +8,16 @@ import lombok.NoArgsConstructor;
 public class secureUser {
 	
 	private int secureUID;
-	private String secureUEmail;
-	private String secureUPassword;
+	private String username;
+	private String password;
 	private String roles;
 	
-	public secureUser(String secureUEmail, String secureUPassword, String roles) {
+	public secureUser(String username, String password, String roles) {
 		super();
-		this.secureUEmail = secureUEmail;
-		this.secureUPassword = secureUPassword;
+		this.username = username;
+		this.password = password;
 		this.roles = roles;
 	}
+	
 
 }

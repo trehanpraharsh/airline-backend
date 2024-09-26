@@ -8,6 +8,6 @@ import com.entity.secureAdmin;
 
 public interface SecureAdminRepo extends JpaRepository<secureAdmin, Integer> {
 	
-	public Optional<secureAdmin> findBySecureAdEmail(String secureAdEmail);
+	public Optional<secureAdmin> findByUsername(String secureAdEmail);
 
 }

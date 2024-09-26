@@ -75,6 +75,7 @@ public class AppSecurity {
 
     @Bean
     public UserDetailsManager authenticateUsers() {
+    	System.out.println("Reading from auth users");
         JdbcUserDetailsManager users = new JdbcUserDetailsManager(dataSource);
         users.setUsersByUsernameQuery("select secureuemail,secureupassword from secureuser where secureuemail=?");
         users.setAuthoritiesByUsernameQuery("select secureuemail,roles from secureuser where secureuemail=?");
@@ -83,7 +84,7 @@ public class AppSecurity {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
+        http.csrf().disable()
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/search").permitAll()
                 .requestMatchers("/admin").hasAuthority("ADMIN")

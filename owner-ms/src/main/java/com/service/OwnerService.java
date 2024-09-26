@@ -43,7 +43,6 @@ public class OwnerService
 	@Autowired
 	ScheduleDao scheduleDao;
 	
-	 @Lazy
 	 @Autowired
 	 @Qualifier("webclient")
 	 private WebClient.Builder builder;
@@ -104,7 +103,7 @@ public class OwnerService
 	    {
 	    	builder.build()
 		           .post()
-		           .uri("http://localhost:8082/offers/createoffer")
+		           .uri("http://offers-ms/offers/createoffer")
 		           .bodyValue(offer)
 		           .retrieve()
 	    		   .bodyToMono(OfferModel.class)
@@ -118,7 +117,7 @@ public class OwnerService
 	    {
 	    	builder.build()
 	           .put()
-	           .uri("http://localhost:8082/offers/updateOfferListing/{offerId}/{status}",offerId,status)
+	           .uri("http://offers-ms/offers/updateOfferListing/{offerId}/{status}",offerId,status)
 	           .retrieve()
  		   .bodyToMono(Void.class)
  		   .block();
@@ -132,7 +131,7 @@ public class OwnerService
 	    {
 			return builder.build()
 					.get()
-					.uri("http://localhost:8082/offers/list")
+					.uri("http://offers-ms/offers/list")
 					.retrieve()
 					.bodyToFlux(OfferResponseModel.class);    	
 	    }
@@ -142,7 +141,7 @@ public class OwnerService
 	    {
 	    	builder.build()
 	           .post()
-	           .uri("http://localhost:8082/promotions/createpromotion")
+	           .uri("http://offers-ms/promotions/createpromotion")
 	           .bodyValue(promotion)
 	           .retrieve()
  		   .bodyToMono(OfferModel.class)
@@ -156,7 +155,7 @@ public class OwnerService
 	    {
 	    	builder.build()
 	           .put()
-	           .uri("http://localhost:8082/promotions/updatePromotionListing/{promotionId}/{status}",promotionId,status)
+	           .uri("http://offers-ms/promotions/updatePromotionListing/{promotionId}/{status}",promotionId,status)
 	           .retrieve()
 		   .bodyToMono(Void.class)
 		   .block();
@@ -169,14 +168,14 @@ public class OwnerService
 	    {
 	    	return builder.build()
 					.get()
-					.uri("http://localhost:8082/promotions/list")
+					.uri("http://offers-ms/promotions/list")
 					.retrieve()
 					.bodyToFlux(PromotionResponseModel.class);  
 	    }
 
 	   public List<Flights> displayAllFlights(){
 		   
-		   String loadAllFlightsURL = "http://localhost:8081/flights/showallflights";
+		   String loadAllFlightsURL = "http://flights-ms/flights/showallflights";
 		   
 		   List<Flights> flights = builder.build()
 				   						.get()
@@ -192,7 +191,7 @@ public class OwnerService
 	   
 	   public Flights updateFlightListing(int flightID, boolean is_disabled_val) {
 		
-		   String updateListingURL = "http://localhost:8081/flights/updateflightlisting/{flightID}/{is_disabled_val}";
+		   String updateListingURL = "http://flights-ms/flights/updateflightlisting/{flightID}/{is_disabled_val}";
 		   
 		   Flights updatedFlight = builder.build()
 				   						.put()

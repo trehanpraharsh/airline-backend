@@ -47,5 +47,8 @@ public class Flights {
 	@Enumerated(EnumType.STRING)
 	private flight_status status = flight_status.ON_TIME;
 	
+	private String airlineName;
+	private String airlineImage;
+	
 
 }

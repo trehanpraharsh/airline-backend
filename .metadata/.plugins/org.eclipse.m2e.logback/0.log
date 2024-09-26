@@ -1968,3 +1968,146 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2024-09-25 19:51:48,043 [Worker-630: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-09-25 19:51:48,054 [Worker-630: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-09-25 19:51:48,057 [Worker-630: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\payment-ms\src\test\resources
+2024-09-26 09:06:10,886 [Worker-614: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:api-gateway:0.0.1-SNAPSHOT @ C:\Users\Administrator\Desktop\airline-backend\api-gateway\pom.xml.
+2024-09-26 09:06:25,338 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:06:25,340 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:06:25,346 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:06:27,005 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:06:27,040 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:06:27,050 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:08:44,664 [Worker-636: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:api-gateway:0.0.1-SNAPSHOT @ C:\Users\Administrator\Desktop\airline-backend\api-gateway\pom.xml.
+2024-09-26 09:08:46,578 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:08:46,579 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:08:46,585 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:08:47,974 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:08:48,004 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:08:48,011 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:15:02,535 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:15:02,553 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:15:02,559 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:16:25,638 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:16:25,651 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:16:25,655 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:16:50,871 [Worker-632: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:16:50,885 [Worker-632: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:16:50,889 [Worker-632: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:17:40,897 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:17:40,908 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:17:40,912 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:21:15,199 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:21:15,213 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:21:15,217 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:21:58,355 [Worker-631: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:21:58,370 [Worker-631: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:21:58,375 [Worker-631: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 09:33:49,864 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:33:50,012 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:33:50,017 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 09:35:18,348 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:35:18,375 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:35:18,380 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 09:36:03,499 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:36:03,513 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:36:03,517 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 09:45:57,349 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:45:57,364 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:45:57,368 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 09:46:15,250 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:46:15,268 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:46:15,274 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 09:46:50,881 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:46:50,896 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:46:50,903 [Worker-641: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 09:55:53,426 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:55:53,500 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:55:53,506 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\user-ms\src\test\resources
+2024-09-26 09:56:27,717 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:56:27,728 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:56:27,733 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\user-ms\src\test\resources
+2024-09-26 09:59:58,371 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 09:59:58,405 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 09:59:58,409 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\owner-ms\src\test\resources
+2024-09-26 10:00:03,748 [Worker-646: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 10:00:03,762 [Worker-646: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 10:00:03,765 [Worker-646: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\owner-ms\src\test\resources
+2024-09-26 10:00:03,909 [Worker-646: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 10:00:03,922 [Worker-646: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 10:00:03,925 [Worker-646: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\user-ms\src\test\resources
+2024-09-26 10:22:24,393 [Worker-653: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 10:22:24,444 [Worker-653: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 10:22:24,448 [Worker-653: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\admin-ms\src\test\resources
+2024-09-26 10:48:01,083 [Worker-650: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 10:48:01,102 [Worker-650: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 10:48:01,107 [Worker-650: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\admin-ms\src\test\resources
+2024-09-26 10:52:10,559 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 10:52:10,577 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 10:52:10,581 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\admin-ms\src\test\resources
+2024-09-26 10:53:25,901 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 10:53:25,915 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 10:53:25,919 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\admin-ms\src\test\resources
+2024-09-26 11:07:49,380 [Worker-652: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:07:49,408 [Worker-652: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:07:49,412 [Worker-652: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\admin-ms\src\test\resources
+2024-09-26 11:20:01,875 [Worker-648: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:20:01,902 [Worker-648: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:20:01,906 [Worker-648: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\admin-ms\src\test\resources
+2024-09-26 11:22:05,857 [Worker-648: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:22:05,870 [Worker-648: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:22:05,875 [Worker-648: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\admin-ms\src\test\resources
+2024-09-26 11:24:29,539 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:24:29,555 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:24:29,559 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 11:26:55,034 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:26:55,056 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:26:55,059 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\owner-ms\src\test\resources
+2024-09-26 11:27:35,692 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:27:35,703 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:27:35,706 [Worker-646: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\owner-ms\src\test\resources
+2024-09-26 11:29:45,036 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:29:45,068 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:29:45,072 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\payment-ms\src\test\resources
+2024-09-26 11:30:15,264 [Worker-655: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:30:15,408 [Worker-655: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:30:15,414 [Worker-655: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\user-ms\src\test\resources
+2024-09-26 11:51:00,252 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:51:00,276 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:51:00,280 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\owner-ms\src\test\resources
+2024-09-26 11:57:40,935 [Worker-662: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 11:57:40,952 [Worker-662: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 11:57:40,956 [Worker-662: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 12:02:57,480 [Worker-661: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 12:02:57,497 [Worker-661: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 12:02:57,501 [Worker-661: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\owner-ms\src\test\resources
+2024-09-26 12:09:14,958 [Worker-661: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 12:09:14,976 [Worker-661: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 12:09:14,981 [Worker-661: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\user-ms\src\test\resources
+2024-09-26 12:13:43,185 [Worker-657: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 12:13:43,202 [Worker-657: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 12:13:43,205 [Worker-657: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\payment-ms\src\test\resources
+2024-09-26 12:46:46,490 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 12:46:46,494 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 12:46:46,500 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 13:19:08,799 [Worker-666: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 13:19:08,817 [Worker-666: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 13:19:08,821 [Worker-666: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\api-gateway\src\test\resources
+2024-09-26 13:57:26,911 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 13:57:27,001 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 13:57:27,010 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\configserver\src\test\resources
+2024-09-26 15:44:45,802 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 15:44:45,821 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 15:44:45,826 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\user-ms\src\test\resources
+2024-09-26 15:54:50,709 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 15:54:50,728 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 15:54:50,735 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\user-ms\src\test\resources
+2024-09-26 16:05:14,328 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 16:05:14,396 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 16:05:14,401 [Worker-627: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 16:05:18,317 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 16:05:18,333 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 16:05:18,337 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\auth-login\src\test\resources
+2024-09-26 16:19:10,555 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 16:19:10,580 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 16:19:10,583 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\owner-ms\src\test\resources
+2024-09-26 16:19:29,281 [Worker-657: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-26 16:19:29,294 [Worker-657: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-26 16:19:29,297 [Worker-657: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Administrator\Desktop\airline-backend\payment-ms\src\test\resources

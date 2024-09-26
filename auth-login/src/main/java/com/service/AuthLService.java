@@ -21,8 +21,7 @@ import com.repo.SecureUserRepo;
 @Service
 public class AuthLService {
 	
-	
-	@Lazy 
+	 
 	@Autowired
 	@Qualifier("webclient")
 	private WebClient.Builder builder;
@@ -44,13 +43,13 @@ public class AuthLService {
 	
 	public User loginUser(String email, String password) {
         // Find user by email
-        Optional<secureUser> userOptional = secureUserRepo.findBySecureUEmail(email);
+        Optional<secureUser> userOptional = secureUserRepo.findByUsername(email);
         if (userOptional.isPresent()) {
             secureUser user = userOptional.get();
             
             // Check if the provided password matches the stored hashed password
-            if (BCrypt.checkpw(password, user.getSecureUPassword())) {
-            	String getUserEntityURL = "http://localhost:8085/users/finduserbyemail/{email}";
+            if (BCrypt.checkpw(password, user.getPassword())) {
+            	String getUserEntityURL = "http://user-ms/users/finduserbyemail/{email}";
             	
             	User userObj = builder.build()
             					.get()
@@ -73,14 +72,14 @@ public class AuthLService {
 	
 	public Airline loginAdmin(String email, String password) {
         // Find user by email
-        Optional<secureAdmin> adminOptional = secureAdminRepo.findBySecureAdEmail(email);
+        Optional<secureAdmin> adminOptional = secureAdminRepo.findByUsername(email);
         if (adminOptional.isPresent()) {
             secureAdmin admin = adminOptional.get();
             
             // Check if the provided password matches the stored hashed password
-            if (BCrypt.checkpw(password, admin.getSecureAdPassword())) {
+            if (BCrypt.checkpw(password, admin.getPassword())) {
             	
-            	String getAdminEntityURL = "http://localhost:8083/owner/findadminbyemail/{email}";
+            	String getAdminEntityURL = "http://owner-ms/owner/findadminbyemail/{email}";
             	
             	Airline adminObj = builder.build()
             					.get()

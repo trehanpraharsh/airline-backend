@@ -27,8 +27,6 @@ public class UserService {
     @Autowired
     private UserRepo userRepo;
     
-    
-    @Lazy 
 	@Autowired
 	@Qualifier("webclient")
 	private WebClient.Builder builder;
@@ -57,7 +55,7 @@ public class UserService {
         //concept to save the secured user in the auth while the time of logging in
         secureUser securedUser = new secureUser(user.getEmail(), user.getPassword(), "USER");
         
-        String registerSecuredUserURL = "http://localhost:8089/auth/secureuser";
+        String registerSecuredUserURL = "http://auth-login/auth/secureuser";
         
         secureUser loadedSecureUser = builder.build()
         								.post()
@@ -88,7 +86,7 @@ public class UserService {
     
     //user-economy
     public List<Flights> loadAvailableEconomyTickets(String destination_city, String source_city, LocalDate departure_date){
-    	String loadAvailableEconomyTicketURL = "http://localhost:8081/flights/searcheconomyflight/{source_city}/{destination_city}/{departure_date}";
+    	String loadAvailableEconomyTicketURL = "http://flights-ms/flights/searcheconomyflight/{source_city}/{destination_city}/{departure_date}";
     	List<Flights> availableEconomyFlights = builder.build()
     				.get()
     				.uri(loadAvailableEconomyTicketURL, source_city, destination_city, departure_date)
@@ -103,7 +101,7 @@ public class UserService {
     
     //user-premium-economy
     public List<Flights> loadAvailablePremiumEconomyTickets(String destination_city, String source_city, LocalDate departure_date){
-    	String loadAvailablePremiumEconomyTicketURL = "http://localhost:8081/flights/searchpremiumeconomyflight/{source_city}/{destination_city}/{departure_date}";
+    	String loadAvailablePremiumEconomyTicketURL = "http://flights-ms/flights/searchpremiumeconomyflight/{source_city}/{destination_city}/{departure_date}";
     	List<Flights> availablePremiumEconomyFlights = builder.build()
     				.get()
     				.uri(loadAvailablePremiumEconomyTicketURL, source_city, destination_city, departure_date)
@@ -118,7 +116,7 @@ public class UserService {
     
     //user-business
     public List<Flights> loadAvailableBusinessTickets(String destination_city, String source_city, LocalDate departure_date){
-    	String loadAvailableBusinessTicketURL = "http://localhost:8081/flights/searchbusinessflight/{source_city}/{destination_city}/{departure_date}";
+    	String loadAvailableBusinessTicketURL = "http://flights-ms/flights/searchbusinessflight/{source_city}/{destination_city}/{departure_date}";
     	List<Flights> availableBusinessFlights = builder.build()
     				.get()
     				.uri(loadAvailableBusinessTicketURL, source_city, destination_city, departure_date)

@@ -25,7 +25,7 @@ public class AdminService {
 	
 	//this @lazy is done to lazy load one component so that dependencies of some of the 
 	//beans in the application context do not form a cycle
-	@Lazy 
+	//@Lazy 
 	@Autowired
 	@Qualifier("webclient")
 	private WebClient.Builder builder;
@@ -52,7 +52,7 @@ public class AdminService {
     //.path("/products/{id}")
     //.build(2))
 	public List<Flights> loadFlightByAirlineCode(String airline_code){
-		String loadFlightByAirlineCodeURL = "http://localhost:8081/flights/searchairlineflights/{airline_code}";
+		String loadFlightByAirlineCodeURL = "http://flights-ms/flights/searchairlineflights/{airline_code}";
 		List<Flights> airlinesFlight = builder.build()
 										.get()
 										.uri(loadFlightByAirlineCodeURL, airline_code)
@@ -66,7 +66,7 @@ public class AdminService {
 	
 	public Flights createNewFlight(Flights flight) {
 		 
-		String createFlightURL = "http://localhost:8081/flights/createflight";
+		String createFlightURL = "http://flights-ms/flights/createflight";
 		Flights newFlight = builder.build()
 							.post()
 							.uri(createFlightURL)
@@ -82,7 +82,7 @@ public class AdminService {
 	
 	public Flights updateFlightStatus(int flightID, flight_status status) {
 		 
-		String updateFlightURL = "http://localhost:8081/flights/updateflightstatus/{flightID}/{status}";
+		String updateFlightURL = "http://flights-ms/flights/updateflightstatus/{flightID}/{status}";
 		Flights updatedFlight = builder.build()
 							.put()
 							.uri(updateFlightURL, flightID, status)
@@ -95,7 +95,7 @@ public class AdminService {
 	}
 	
 	public void deleteFlight(int flightID) {
-		String deleteFlightURL = "http://localhost:8081/flights/deleteflight/{flightID}";
+		String deleteFlightURL = "http://flights-ms/flights/deleteflight/{flightID}";
 		builder.build()
 				.delete()
 				.uri(deleteFlightURL, flightID)
@@ -105,7 +105,7 @@ public class AdminService {
 	}
 	
 	public Flights searchByID(int flightID) {
-		String searchedFlightURL = "http://localhost:8081/flights/searchbyid/{flightID}";
+		String searchedFlightURL = "http://flights-ms/flights/searchbyid/{flightID}";
 		Flights searchedFlight = builder.build()
 										.get()
 										.uri(searchedFlightURL, flightID)

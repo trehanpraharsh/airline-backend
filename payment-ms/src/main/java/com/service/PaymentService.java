@@ -21,7 +21,6 @@ public class PaymentService
     @Autowired
     private com.dao.paymentDAO paymentDAO;
 
-    @Lazy
     @Autowired
     @Qualifier("webclient")
     private WebClient.Builder builder;
@@ -55,7 +54,7 @@ public class PaymentService
         System.out.println("updating booking status..");
         return builder.build()
             .put()
-            .uri("http://localhost:8086/booking/{bookingId}/confirm", bookingId)
+            .uri("http://booking-ms/booking/{bookingId}/confirm", bookingId)
             .bodyValue(passengers)
             .retrieve()
             .bodyToMono(Void.class)

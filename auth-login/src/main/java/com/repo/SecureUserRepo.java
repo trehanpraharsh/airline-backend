@@ -8,6 +8,6 @@ import com.entity.secureUser;
 
 public interface SecureUserRepo extends JpaRepository<secureUser, Integer> {
 	
-	public Optional<secureUser> findBySecureUEmail(String secureUEmail);
+	public Optional<secureUser> findByUsername(String secureUEmail);
 
 }
