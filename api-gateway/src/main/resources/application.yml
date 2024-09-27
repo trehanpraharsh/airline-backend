@@ -39,7 +39,7 @@ spring:
       uri: lb://admin-ms
     - id: usr
       predicates:
-      - Path=/user/**
+      - Path=/users/**
       uri: lb://user-ms
     - id: bkn
       predicates:
@@ -47,9 +47,9 @@ spring:
       uri: lb://booking-ms
     - id: pmt
       predicates:
-      - Path=/payment/**
+      - Path=/payments/**
       uri: lb://payment-ms
-	
+
  
  
   
@@ -58,10 +58,10 @@ eureka:
   serviceUrl:
    defaultZone: http://localhost:8090/eureka
   
-management:
- endpoints:
-  web:
-   exposure:
-    include: "*"
- security:
-  enabled: false
+#management:
+# endpoints:
+#  web:
+#   exposure:
+#    include: "*"
+# security:
+#  enabled: false

@@ -30,12 +30,13 @@ public class PaymentService
         return paymentDAO.addPayment(payment);
     }
 
-    public void addSuccessFulPayment(PaymentResponse response)
+    public PaymentResponse addSuccessFulPayment(PaymentResponse response)
     {
         System.out.println("addSuccessfulPayment method");
         paymentDAO.addPayment(response);
         System.out.println("added payment record");
         updateBookingStatusAndAddPassengers(response.getBookingId(),response.getPassengers());
+        return response;
     }
 
     public Payment getPaymentByBookingId(Long bookingId)
